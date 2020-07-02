@@ -1,5 +1,7 @@
 import { AeyonFirstPack } from '../metas/aeyonfirstpack/aeyonfirstpack'
 import { ForRentSign } from '../metas/forrentsign/forrentsign'
+import { SummerGallery } from '../metas/summergallery/summergallery'
+import { AdSpinner } from '../metas/adspinner/adspinner'
 
 const aeyonfirstpackLandOwnerData = {
   metadata: `
@@ -198,7 +200,7 @@ const aeyonfirstpackLandOwnerData = {
 }
 
 /// --- Set up your meta system to test ---
-engine.addSystem(new AeyonFirstPack(null, aeyonfirstpackLandOwnerData))
+//engine.addSystem(new AeyonFirstPack(null, aeyonfirstpackLandOwnerData))
 
 
 const forrentsignLandOwnerData = {
@@ -213,4 +215,34 @@ const forrentsignLandOwnerData = {
 }
 
 /// --- Set up your meta system to test ---
-engine.addSystem(new ForRentSign(null, forrentsignLandOwnerData))
+//engine.addSystem(new ForRentSign(null, forrentsignLandOwnerData))
+
+
+const summergalleryLandOwnerData = {
+  metadata: `
+  {
+    "summer": {
+      "position": {"x":8, "y":0, "z":8},
+      "rotation": {"x":0, "y":0, "z":0},
+      "scale": {"x":16, "y":9, "z":16}
+    }
+  }`
+}
+
+/// --- Set up your meta system to test ---
+engine.addSystem(new SummerGallery(null, summergalleryLandOwnerData))
+
+
+const adspinnerLandOwnerData = {
+  metadata: `
+  {
+    "spinner": {
+      "position": {"x":8, "y":0, "z":8},
+      "rotation": {"x":0, "y":0, "z":0},
+      "scale": {"x":1, "y":1, "z":1}
+    }
+  }`
+}
+
+/// --- Set up your meta system to test ---
+//engine.addSystem(new AdSpinner(null, adspinnerLandOwnerData))

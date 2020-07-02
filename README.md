@@ -4,3 +4,4 @@ Meta creations by Aeyon for distribution on MetaZone.io the App Store for Decent
 
 * Aeyon First Pack
 * For Rent Sign
+* Summer Gallery
